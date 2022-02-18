@@ -2,6 +2,7 @@ import React from "react";
 import HeadLayout from "./head";
 import constants from "../lib/constants";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,14 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       />
       <Header />
       <main>{children}</main>
-      <footer className="mt-20">
-        <small>
-          <time>2022</time> <span>@imori</span>
-          <a href="/feed.xml" className="float-right">
-            RSS
-          </a>
-        </small>
-      </footer>
+      <Footer />
     </div>
   );
 }

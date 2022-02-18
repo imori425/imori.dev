@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getArticle } from "../../lib/articles";
 
-export default async (
+async function handler(
   req: NextApiRequest,
   res: NextApiResponse
-): Promise<void> => {
+): Promise<void> {
   if (!req.query.draftKey || !req.query.id) {
     return res.status(401).json({ message: "Invalid token" });
   }
@@ -22,10 +22,10 @@ export default async (
   res.setPreviewData(
     {
       draftKey: req.query.draftKey,
-      id: req.query.id,
+      id: req.query.id
     },
     {
-      maxAge: 60,
+      maxAge: 60
     }
   );
   // 詳細ページへリダイレクト
@@ -34,4 +34,6 @@ export default async (
   res.end();
 
   return Promise.resolve();
-};
+}
+
+export default handler;

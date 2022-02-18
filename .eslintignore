@@ -1,5 +1,0 @@
-{
-    "ignorePatterns": ["temp.js", "node_modules/" , "next\-env.d.ts"],
-    "rules": {
-    }
-}

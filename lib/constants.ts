@@ -1,4 +1,4 @@
-export default {
+const Constans = {
   site: {
     name: "imori.dev",
     description: "",
@@ -6,3 +6,5 @@ export default {
     defaultImageUrl: "",
   },
 };
+
+export default Constans;

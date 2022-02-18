@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Dev() {
@@ -5,7 +6,7 @@ export default function Dev() {
     <>
       <h3>Dev</h3>
       <li>
-        ポートフォリオ: <a href="/">imori.dev</a>
+        ポートフォリオ: <Link href="/" ><a>imori.dev</a></Link>
       </li>
     </>
   );

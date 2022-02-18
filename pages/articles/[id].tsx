@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion, react/no-danger */
-
 import React from "react";
 import { NextRouter, useRouter } from "next/router";
 import Error from "next/error";
@@ -26,7 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true,
+    fallback: "blocking",
   };
 };
 
@@ -45,10 +43,10 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   }
   return {
     props: { article },
+    revalidate: 60,
   };
 };
 
-// eslint-disable-next-line react/function-component-definition
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   article,
 }) => {

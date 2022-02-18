@@ -20,7 +20,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="pl-5">
-            <Link href="/articles" as="/articles">
+            <Link href="/articles" as="/articles" prefetch>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className="">Posts</a>
             </Link>

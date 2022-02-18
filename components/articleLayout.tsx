@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import { useRouter } from "next/router";
 import HeadLayout from "./head";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function ArticleLayout({
   children,
@@ -26,6 +27,7 @@ export default function ArticleLayout({
       />
       <Header />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }
