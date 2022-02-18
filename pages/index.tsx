@@ -1,8 +1,7 @@
-import { GetStaticProps } from "next";
 import React from "react";
 import Layout from "../components/layout";
 import Profile from "../components/profile";
-import Works from "../components/works";
+import Dev from "../components/dev";
 
 export default function Home() {
   return (
@@ -11,14 +10,8 @@ export default function Home() {
         <Profile />
       </section>
       <section>
-        <Works />
+        <Dev />
       </section>
     </Layout>
   );
 }
-
-export const getStaticProps: GetStaticProps = () => {
-  return {
-    props: {},
-  };
-};

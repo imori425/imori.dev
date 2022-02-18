@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Works() {
+export default function Dev() {
   return (
     <>
-      <h3>works</h3>
+      <h3>Dev</h3>
       <li>
         ポートフォリオ: <a href="/">imori.dev</a>
       </li>

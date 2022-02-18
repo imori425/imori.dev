@@ -16,6 +16,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       />
       <Header />
       <main>{children}</main>
+      <footer className="mt-20">
+        <small>
+          <time>2022</time> <span>@imori</span>
+          <a href="/feed.xml" className="float-right">
+            RSS
+          </a>
+        </small>
+      </footer>
     </div>
   );
 }

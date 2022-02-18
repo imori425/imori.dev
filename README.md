@@ -29,7 +29,7 @@
 開発環境と本番環境でEnvironmentを扱いを分けている
 
 ## 開発環境
-`.env.development`ファイルでEnvironmentを管理している。
+`.env.local`ファイルでEnvironmentを管理している。
 このファイルはGit管理外にしている。そのため、開発環境構築時に設定の必要がある
 
 ## 本番環境

@@ -13,6 +13,7 @@ export default function ArticleLayout({
   description: string;
 }): ReactElement {
   const router = useRouter();
+  // TODO og image
   return (
     <div className="container mx-auto prose prose-sm prose-slate p-5">
       <HeadLayout
